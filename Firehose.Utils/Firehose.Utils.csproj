@@ -7,8 +7,8 @@
     <ProjectGuid>{6B1C1F17-1524-47EC-8CCF-2682622759D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StormGiant.Shared</RootNamespace>
-    <AssemblyName>StormGiant.Shared</AssemblyName>
+    <RootNamespace>Firehose.Utils</RootNamespace>
+    <AssemblyName>Firehose.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Firehose.Core
 {
@@ -13,9 +14,9 @@ namespace Firehose.Core
         { this.dataAccess = dataAccess; }
 
 
-        public Feed AddFeed(Feed feedData)
+        public async Task<Feed> AddFeedAsync(Feed feedData)
         {
-            int? id = dataAccess.AddFeed(feedData.Name, feedData.Address);
+            int? id = await dataAccess.AddFeedAsync(feedData.Name, feedData.Address);
             if (id == null)
                 return null;
             var feed = new Feed(id.Value, feedData.Name, feedData.Address, feedData.FeedType);
@@ -24,19 +25,19 @@ namespace Firehose.Core
         }
 
         
-        public bool RemoveFeed(Feed feed)
+        public async Task<bool> RemoveFeedAsync(Feed feed)
         {
             if (feed == null)
                 throw new ArgumentNullException(nameof(feed));
-            return dataAccess.DeleteFeed(feed.Id);
+            return await dataAccess.DeleteFeedAsync(feed.Id);
         }
         
 
-        public bool RenameFeed(Feed feed)
+        public async Task<bool> RenameFeedAsyncAsync(Feed feed)
         {
             if (feed == null)
                 throw new ArgumentNullException(nameof(feed));
-            return dataAccess.RenameFeed(feed.Id, feed.Name);
+            return await dataAccess.RenameFeedAsync(feed.Id, feed.Name);
         }
     }
 }

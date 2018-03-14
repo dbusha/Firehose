@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firehose.Console", "Firehos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firehose.Core", "Firehose.Core\Firehose.Core.csproj", "{18CFFB43-D9F9-4B85-99DC-81C9BD6E76A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StormGiant.Shared", "StormGiant.Shared\StormGiant.Shared.csproj", "{6B1C1F17-1524-47EC-8CCF-2682622759D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Firehose.Utils", "Firehose.Utils\Firehose.Utils.csproj", "{6B1C1F17-1524-47EC-8CCF-2682622759D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

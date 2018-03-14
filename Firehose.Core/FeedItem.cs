@@ -2,7 +2,7 @@
 using System.Linq;
 using Argotic.Extensions.Core;
 using Argotic.Syndication;
-using StormGiant.Shared;
+using Firehose.Utils;
 
 namespace Firehose.Core
 {
@@ -33,6 +33,16 @@ namespace Firehose.Core
             Link = entry.BaseUri;
             Id = entry.Id.ToString();
         }
+        
+        
+        public FeedItem(GenericSyndicationItem item)
+        {
+            Title = item.Title;
+            PublishDate = item.PublishedOn;
+            Description = item.Summary;
+            Content = item.Summary;
+        } 
+        
 
         public string Author { get; }
         public string Title { get; }

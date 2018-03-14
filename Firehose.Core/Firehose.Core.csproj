@@ -71,6 +71,7 @@
     <Compile Include="ArgoticFeedReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DataAccess.cs" />
+    <Compile Include="Properties\FeedController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

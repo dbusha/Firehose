@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StormGiant.Shared
+namespace Firehose.Utils
 {
     public static class StringExtensions
     {

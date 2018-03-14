@@ -58,6 +58,7 @@ namespace Firehose.Core
         public string Address { get; }
         public FeedType FeedType { get; }
         public TimeSpan Frequency { get; }
+        public DateTime LastUpdate { get; set; }
 
 
         private TimeSpan GetFrequency_(IExtensibleSyndicationObject feed)
@@ -70,7 +71,7 @@ namespace Firehose.Core
                case SiteSummaryUpdatePeriod.Hourly: hour = ext.Context.Frequency; break;
             }
 
-            return new TimeSpan(day, hour, 0);
+            return new TimeSpan(day, hour, 0, 0);
         }
     }
 }
